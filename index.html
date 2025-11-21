@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Mugali | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0a497c; /* Deep Professional Blue */
+            --background: #f4f7f6;
+            --text-light: #fefefe;
+            --text-dark: #333;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-dark);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 900px;
+            margin: auto;
+            padding: 50px 20px;
+            background: var(--text-light);
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-content {
+            padding-right: 40px;
+            text-align: left;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid var(--primary);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--primary);
+            margin: 0 0 10px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .call-to-action {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-main {
+            padding: 12px 25px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            text-decoration: none;
+        }
+        
+        .btn-main:hover {
+            background-color: #007bff;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text-content {
+                padding-right: 0;
+                order: 2;
+                margin-top: 30px;
+            }
+            .profile-photo {
+                order: 1;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .call-to-action {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <div class="text-content">
+            <h1> Akshay Mugali.</h1>
+            <h2>Computer Science Engineering Student </h2>
+            <h3> 2MM23CS008</h3>
+
+            <p style="max-width: 450px; line-height: 1.6;">
+
+            </p>
+
+            <div class="contact-links" style="margin-top: 20px; font-size: 1.1rem; color: #777;">
+                <p><i class="fas fa-envelope"></i> mugaliakshay11@gmail.com</p>
+            </div>
+
+            <div class="call-to-action">
+                <a href="resume.html" class="btn-main">
+                    View Full Resume <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        
+        <img src="photo.jpeg" alt="Akshay Mugali" class="profile-photo">
+    </div>
+
+</body>
+</html>
